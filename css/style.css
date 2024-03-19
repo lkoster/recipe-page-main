@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px dashed #eee; */
+}
+
+html {
+  /* To change rem to 10base */
+  font-size: 62.5%;
+}
+
+body {
+  /* Base body set up */
+  /* Centers the card vertically in the middle of the page */
+  min-height: 100vh;
+
+  color: MAIN COLOR;
+  background-color: MAIN BG COLOR;
+  /* - */
+  /* To reset base font size to 16px */
+  font-size: 1.6rem;
+
+  /* To align container in the middle of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10rem;
+  line-height: 1.5;
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 54%, 90%);
+}
+
+ul li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.2rem;
+}
+
+li {
+  margin-bottom: 1.2rem;
+}
+
+ul li {
+  list-style: square;
+}
+
+ol li::marker {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+section {
+  margin: 1.6rem 0;
+}
+
+/* GRID TEMPLATE */
+.grid-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+/* --- */
+
+.card {
+  width: 100%;
+  max-width: 74rem;
+  margin-top: 10rem;
+  /* padding: 3.6rem; */
+  border-radius: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card-content-wrapper {
+  padding: 0 3.6rem;
+}
+
+.header-img-wrapper {
+  display: flex;
+  justify-content: center;
+
+  /* desktop */
+  padding: 3.6rem;
+}
+
+.header-img {
+  width: 100%;
+  /* desktop */
+  border-radius: 1.6rem;
+}
+
+.header-text {
+  padding: 0 3.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  color: hsl(14, 45%, 36%);
+}
+
+.title {
+  margin-bottom: 2.4rem;
+}
+
+.prep-box {
+  padding: 2.4rem 3rem;
+  background-color: hsl(334, 41%, 97%);
+  border-radius: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-prepration {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1.6rem;
+}
+
+.list {
+  padding-left: 3rem;
+}
+
+.nutrition-value {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.divider {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin-top: 2.4rem;
+}
+
+/* .grid-divider {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 2.4rem 0;
+} */
+.grid-divider {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  margin: 1.2rem 0;
+}
+
+.card-content-wrapper:last-child {
+  margin-bottom: 4.8rem;
+}
+
+.attribution {
+  margin: 9.6rem;
+}
+
+@media (max-width: 745px) {
+  .card {
+    margin: 0;
+  }
+  .header-img-wrapper {
+    padding: 0;
+    margin-bottom: 2.4rem;
+  }
+  .header-img {
+    width: 100%;
+    /* desktop */
+    border-radius: 0;
+  }
+}
