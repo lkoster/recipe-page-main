@@ -6,31 +6,21 @@
 }
 
 html {
-  /* To change rem to 10base */
   font-size: 62.5%;
 }
-
 body {
-  /* Base body set up */
-  /* Centers the card vertically in the middle of the page */
   min-height: 100vh;
-
-  color: MAIN COLOR;
-  background-color: MAIN BG COLOR;
-  /* - */
-  /* To reset base font size to 16px */
   font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: 'Outfit', sans-serif;
+  color: hsl(30, 10%, 34%);
+  background-color: hsl(30, 54%, 90%);
 
-  /* To align container in the middle of the screen */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10rem;
-  line-height: 1.5;
-  font-family: "Outfit", sans-serif;
-  color: hsl(30, 10%, 34%);
-  background-color: hsl(30, 54%, 90%);
 }
 
 ul li::marker {
@@ -51,11 +41,82 @@ ol li::marker {
   color: hsl(14, 45%, 36%);
 }
 
-section {
-  margin: 1.6rem 0;
+.list {
+  padding-left: 3rem;
 }
 
-/* GRID TEMPLATE */
+.heading-primary,
+.heading-secondary {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  color: hsl(14, 45%, 36%);
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin-bottom: 3.2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 74rem;
+  margin-top: 10rem;
+  border-radius: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card__content-wrapper {
+  padding: 0 3.6rem;
+}
+
+.header {
+  margin-bottom: 3.2rem;
+}
+
+.header__img-wrapper {
+  display: flex;
+  justify-content: center;
+
+  /* desktop */
+  padding: 3.6rem;
+}
+
+.header img {
+  width: 100%;
+  /* desktop */
+  border-radius: 1.6rem;
+}
+
+.header__text {
+  padding: 0 3.6rem;
+}
+
+.prep__wrapper {
+  padding: 2.4rem 3rem;
+  background-color: hsl(334, 41%, 97%);
+  border-radius: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.prep__heading {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 1.6rem;
+}
+
+/* Nutrition Grid Template */
+
 .grid-container {
   max-width: 120rem;
   margin: 0 auto;
@@ -73,74 +134,6 @@ section {
 }
 /* --- */
 
-.card {
-  width: 100%;
-  max-width: 74rem;
-  margin-top: 10rem;
-  /* padding: 3.6rem; */
-  border-radius: 1.6rem;
-  background-color: hsl(0, 0%, 100%);
-}
-
-.card-content-wrapper {
-  padding: 0 3.6rem;
-}
-
-.header-img-wrapper {
-  display: flex;
-  justify-content: center;
-
-  /* desktop */
-  padding: 3.6rem;
-}
-
-.header-img {
-  width: 100%;
-  /* desktop */
-  border-radius: 1.6rem;
-}
-
-.header-text {
-  padding: 0 3.6rem;
-  margin-bottom: 3.2rem;
-}
-
-.heading-primary,
-.heading-secondary {
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-}
-
-.heading-primary {
-  font-size: 3.6rem;
-  color: hsl(24, 5%, 18%);
-}
-
-.heading-secondary {
-  font-size: 3rem;
-  color: hsl(14, 45%, 36%);
-}
-
-.title {
-  margin-bottom: 2.4rem;
-}
-
-.prep-box {
-  padding: 2.4rem 3rem;
-  background-color: hsl(334, 41%, 97%);
-  border-radius: 1rem;
-  margin-bottom: 3.2rem;
-}
-
-.heading-prepration {
-  color: hsl(332, 51%, 32%);
-  margin-bottom: 1.6rem;
-}
-
-.list {
-  padding-left: 3rem;
-}
-
 .nutrition-value {
   font-weight: 700;
   color: hsl(14, 45%, 36%);
@@ -148,7 +141,7 @@ section {
 
 .divider {
   border-bottom: 1px solid hsl(30, 18%, 87%);
-  margin-top: 2.4rem;
+  margin-top: 3.2rem;
 }
 
 /* .grid-divider {
@@ -165,20 +158,25 @@ section {
 }
 
 .attribution {
-  margin: 9.6rem;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 745px) {
   .card {
     margin: 0;
+    border-radius: 0;
   }
-  .header-img-wrapper {
+  .header__img-wrapper {
     padding: 0;
     margin-bottom: 2.4rem;
   }
-  .header-img {
+  .header img {
     width: 100%;
-    /* desktop */
     border-radius: 0;
   }
 }

@@ -14,10 +14,6 @@
 
     <title>Frontend Mentor | Recipe page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-    <!-- Google Fonts -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,31 +21,19 @@
       rel="stylesheet"
     />
 
-    <!-- Custom Styles -->
-
-    <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <article class="card">
       <!-- HEADER -->
       <header class="header">
-        <div class="header-img-wrapper">
+        <div class="header__img-wrapper">
           <img
             src="assets/images/image-omelette.jpeg"
             alt="Picture of an omelette"
-            class="header-img"
           />
         </div>
-        <div class="header-text">
+        <div class="header__text">
           <h1 class="heading-primary title">Simple Omelette Recipe</h1>
           <p>
             An easy and quick dish, perfect for any meal. This classic omelette
@@ -58,19 +42,18 @@
           </p>
         </div>
       </header>
-      <div class="card-content-wrapper">
-        <!-- PREPARATION -->
-        <section class="preperation">
-          <div class="prep-box">
-            <h3 class="heading-prepration">Prepration time</h3>
+      <div class="card__content-wrapper">
+        <section class="prep">
+          <div class="prep__wrapper">
+            <h3 class="prep__heading">Prepration time</h3>
             <ul class="list">
-              <li>Total: Approximately 10 minutes</li>
-              <li>Preparation: 5 minutes</li>
-              <li>Cooking: 5 minutes</li>
+              <li><strong> Total: </strong>Approximately 10 minutes</li>
+              <li><strong> Preparation: </strong>5 minutes</li>
+              <li><strong> Cooking:</strong> 5 minutes</li>
             </ul>
           </div>
         </section>
-        <!-- INDREDIENTS -->
+
         <section class="ingredients">
           <h2 class="heading-secondary title">Ingredients</h2>
           <ul class="list">
@@ -84,7 +67,7 @@
           </ul>
           <div class="divider"></div>
         </section>
-        <!-- INSTRUCTION -->
+
         <section class="instructions">
           <h2 class="heading-secondary title">Instructions</h2>
           <ol class="list">
@@ -123,8 +106,8 @@
           </ol>
           <div class="divider"></div>
         </section>
-        <!-- NUTRITION -->
-        <div class="section nutrition">
+
+        <section class="nutrition">
           <h2 class="heading-secondary title">Nutrition</h2>
           <p class="title">
             The table below shows nutritional values per serving without the
@@ -150,7 +133,7 @@
             <div class="nutrition-type">Fat</div>
             <div class="nutrition-value">22g</div>
           </div>
-        </div>
+        </section>
       </div>
     </article>
     <div class="attribution">
